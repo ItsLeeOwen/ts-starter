@@ -1,0 +1,37 @@
+{
+  "name": "ts-starter",
+  "author": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/webpack/bin/webpack.js"
+  },
+  "webpack": {
+    "entry": {
+      "index.js": "./src/index.tsx"
+    },
+    "mode": "development",
+    "output": {
+      "path": "dist"
+    },
+    "target": "web"
+  },
+  "dependencies": {
+    "@types/react": "^16.4.8",
+    "@types/react-dom": "^16.0.7",
+    "clean-webpack-plugin": "^0.1.19",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "ts-loader": "^4.4.2",
+    "typescript": "^3.0.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "script-ext-html-webpack-plugin": "^2.0.1"
+  },
+  "license": "ISC"
+}
